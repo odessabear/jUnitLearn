@@ -1,4 +1,4 @@
-package com.odebar.jUnitLearn;
+package com.odebar.jUnitLearn.part1;
 
 import java.util.Objects;
 

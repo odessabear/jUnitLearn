@@ -1,4 +1,4 @@
-package com.odebar.jUnitLearn;
+package com.odebar.jUnitLearn.part1;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class ArraysTest {
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void testBubbleSort() {
         int[] arr = {4, 12, -17, 3};
         int[] expected = {-17, 3, 4, 12};
