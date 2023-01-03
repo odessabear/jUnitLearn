@@ -6,7 +6,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 public class ArraysTest {
 
-    @Test(expected = NullPointerException.class)
+    @Test
     public void testBubbleSort() {
         int[] arr = {4, 12, -17, 3};
         int[] expected = {-17, 3, 4, 12};
