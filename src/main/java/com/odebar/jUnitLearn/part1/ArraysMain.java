@@ -16,9 +16,4 @@ public class ArraysMain {
             }
         }
     }
-
-    public static void main(String[] args) {
-        Class<?> clazz = ArraysMain.class;
-        System.out.println(Arrays.toString(clazz.getMethods()));
-    }
 }
