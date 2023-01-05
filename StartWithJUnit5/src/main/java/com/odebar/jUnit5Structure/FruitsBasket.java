@@ -30,4 +30,8 @@ public class FruitsBasket {
     public boolean addALot(List<Fruit> fruitList) {
         return basket.addAll(fruitList);
     }
+
+    public String[] greet(String wish) {
+        return wish.split("[ !]");
+    }
 }

@@ -62,14 +62,22 @@ public class FruitsBasketTest {
 //        assertNull(basket, "Checking if the basket is null.");
 //    }
 
+//    @Test
+//    void testForTruth() {
+//        List<Fruit> fruitList = Arrays.asList(
+//                new Fruit("Peach", 100),
+//                new Fruit("Tangerine", 50),
+//                new Fruit("Mango", 150)
+//        );
+//        assertTrue(basket.addALot(fruitList), "Adding a lot of fruits");
+//    }
+
     @Test
-    void testForTruth() {
-        List<Fruit> fruitList = Arrays.asList(
-                new Fruit("Peach", 100),
-                new Fruit("Tangerine", 50),
-                new Fruit("Mango", 150)
-        );
-        assertTrue(basket.addALot(fruitList), "Adding a lot of fruits");
+    void testArray() {
+        String wish = "Some text of wish!";
+        String[] expected = {"Some", "text", "of", "wish"};
+        String[] actual = basket.greet(wish);
+        assertArrayEquals(expected,actual);
     }
 
     @AfterEach
