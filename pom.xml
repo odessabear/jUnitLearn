@@ -11,6 +11,8 @@
     <modules>
         <module>StartWithJUnit5</module>
         <module>Module2</module>
+        <module>JUnitIntermediate</module>
+        <module>JUnitIntermediate</module>
     </modules>
 
     <properties>
