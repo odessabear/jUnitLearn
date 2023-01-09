@@ -7,16 +7,16 @@ import org.junit.jupiter.api.extension.ParameterResolver;
 
 public class ThingParameterResolver implements ParameterResolver {
 
-	@Override
-	public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
-			throws ParameterResolutionException {
-		return new Thing();
-	}
+    @Override
+    public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
+            throws ParameterResolutionException {
+        return new Thing();
+    }
 
-	@Override
-	public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
-			throws ParameterResolutionException {
-		return parameterContext.getParameter().getType() == Thing.class;
-	}
+    @Override
+    public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
+            throws ParameterResolutionException {
+        return parameterContext.getParameter().getType() == Thing.class;
+    }
 
 }

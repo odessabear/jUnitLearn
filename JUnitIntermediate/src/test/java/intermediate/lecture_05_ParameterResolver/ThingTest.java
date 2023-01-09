@@ -11,9 +11,9 @@ import intermediate.lecture_05_ParameterResolver.ThingParameterResolver;
 @ExtendWith(ThingParameterResolver.class)
 class ThingTest {
 
-	@Test
-	void testAnswer(Thing thing) {
-		assertEquals(42, thing.answer());
-	}
+    @Test
+    void testAnswer(Thing thing) {
+        assertEquals(42, thing.answer());
+    }
 
 }
